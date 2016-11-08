@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.4.5">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+	$.mobile.changePage.defaults.changeHash=false;
+	$.mobile.hashListeningEnabled=false;
+	$.mobile.pushStateEnabled=false;
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Document sans nom</title>
+</head>
+
+<body>
+<div data-role="page"id="index"> 
+<div data-role="header">
+<a href="#index" class="ui-btn-inline ui-btn-icon-left ui-icon-home"ui-btn-icon-left ui-icon-home data-transitions="pop">Home</a>
+<h1 data-inline="true"> Home</h1>
+<a data-direction="reverse" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-icon-back" data-transitions="pop"> Précédent</a>
+</div>
+<div data-role="main"class="ui-content">
+<section>
+<article> 
+<h2> Description </h2>
+cette Application est un example 
+</article>
+
+</section>
+</div>
+<div data-role="footer">
+<div data-role="navbar">
+<ul>
+<li> <a href="#contacts">Contacts</a></li>
+<li> <a href="#emplacement">Emplacement</a></li>
+<li> <a href="#apropos">A propos</a></li>
+</ul>
+</div>
+</div>
+</div>
+ddddddddddddddddddddddddddddddddddddddddd
+<div data-role="page"id="contacts"> 
+<div data-role="header">
+<a href="#index" class="ui-btn-inline ui-btn-icon-left ui-icon-home"ui-btn-icon-left ui-icon-home data-transitions="pop">Home</a>
+<h1 data-inline="true"> contacts</h1>
+<a data-direction="reverse" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-icon-back" data-transitions="pop"> Précédent</a>
+</div>
+<div data-role="panel" data-position="right" data-position-fixed="false" data-display="reveal" id="nav-panel1">
+<label > isggabes </label>
+<input type="tel"name="tel" value="32222"> <input /><br>
+</div>
+<div data-role="panel" data-position="right" data-position-fixed="false" data-display="reveal" id="nav-panel2">
+<label > tunis </label>
+<input type="tel"name="tel" value="3888888"> <input /><br>
+</div>
+<div data-role="main class="ui-content">
+<div data-role="panel"data-position="right" id="maypanel2">
+</div>
+<ul data-role="listview">
+<li><a href="#nav-panel1"> ggggg</a></li>
+<li><a href="#nav-panel2"> jjjjjj</a></li></ul>
+</div>
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="#contacts">Contacts</a></li>
+<li> <a href="#emplacement">Emplacement</a></li>
+<li> <a href="#apropos">A propos</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
