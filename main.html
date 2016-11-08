@@ -1,0 +1,76 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DIAK-Boite-de-Reception</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
+<script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
+<script type="text/javascript" src="validation.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<style type="text/css"> 
+a:link 
+{ 
+ text-decoration:none; 
+} 
+</style>
+<script type="text/javascript" >
+
+var texte;
+ 
+        $.ajax({
+                    type: "GET",
+                    url: "requete.php",
+                    dataType : "html",
+ 
+                 
+                    error:function(msg, string){
+                        alert( "Error !: " + string );
+                    },
+                 
+                    success:function(data){
+                        texte = data;
+                        $("#check-e").html(data);
+                    }
+                });
+</script>
+
+</head>
+
+<body>
+    
+<div class="signin-form">
+
+	<div class="container">
+     
+        
+       <form class="form-signin" method="post" id="login-form">
+      
+        <h2 class="form-signin-heading">Boite de Reception</h2><hr />
+        
+        <div id="error">
+        <!-- error will be shown here ! -->
+        </div>
+        
+        <div class="form-group">
+        
+        <span id="check-e"></span>
+        </div>
+        
+        
+       
+     	<hr />
+        
+         
+      
+      </form>
+
+    </div>
+    
+</div>
+    
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
